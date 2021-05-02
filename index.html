@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="src/sass/style.css">
+  <link rel="shortcut icon" href="src/img/favicon.png" type="image/png">
+  <title>SpeakIt</title>
+</head>
+<body>
+  <main>
+    <div class="start-screen">
+      <div class="start-screen__wrap">
+        <h1>SpeakIt</h1>
+        <p>Click on the words to hear them sound.</p>
+        <p>Click on the button and speak the words into the microphone.</p>
+        <button class="btn start-screen__btn">Start</button>
+      </div>
+    </div>
+    <div class="container">
+      <div class="panel">
+        <div class="levels">
+            <button class="levels__btn levels__btn--active">1</button>
+            <button class="levels__btn">2</button>
+            <button class="levels__btn">3</button>
+            <button class="levels__btn">4</button>
+            <button class="levels__btn">5</button>
+            <button class="levels__btn">6</button>
+        </div>
+        <div class="statistic__show">Show Statistic</div>
+        <div class="rating"></div>
+      </div>
+      <div class="word-info">
+        <img class="word-image" src="src/img/language.jpg" alt="Picture">
+        <p class="translate"></p>
+        <p class="recognition"></p>
+      </div>
+      <div class="load-info">
+        <div class="words">
+          <ul>
+            <li class="words__item">
+              <p class="word"></p>
+              <p class="transcription"></p>
+            </li>
+            <li class="words__item">
+              <p class="word"></p>
+              <p class="transcription"></p>
+            </li>
+            <li class="words__item">
+              <p class="word"></p>
+              <p class="transcription"></p>
+            </li>
+            <li class="words__item">
+              <p class="word"></p>
+              <p class="transcription"></p>
+            </li>
+            <li class="words__item">
+              <p class="word"></p>
+              <p class="transcription"></p>
+            </li>
+            <li class="words__item">
+              <p class="word"></p>
+              <p class="transcription"></p>
+            </li>
+            <li class="words__item">
+              <p class="word"></p>
+              <p class="transcription"></p>
+            </li>
+            <li class="words__item">
+              <p class="word"></p>
+              <p class="transcription"></p>
+            </li>
+            <li class="words__item">
+              <p class="word"></p>
+              <p class="transcription"></p>
+            </li>
+            <li class="words__item">
+              <p class="word"></p>
+              <p class="transcription"></p>
+            </li>
+          </ul>
+        </div>
+        <div class="buttons">
+          <button class="btn restart__btn">Restart</button>
+          <button class="btn speak__btn">Speak please</button>
+          <button class="btn results__btn">Results</button>
+        </div>
+      </div>
+    </div>
+    <div class="results">
+      <div class="results__wrap">
+        <div class="error">
+          <p class="error__text">Ошибок <span class="error__num">0</span></p>
+          <ul class="error__list">
+          </ul>
+        </div>
+        <div class="correct">
+          <p class="correct__text">Знаю <span class="correct__num">0</span></p>
+          <ul class="correct__list">
+          </ul>
+        </div>
+        <div class="results__buttons">
+          <button class="btn results__btn return__btn">Return</button>
+          <button class="btn results__btn new-game__btn ">New Game</button>
+        </div>
+      </div>
+    </div>
+    <div class="statistic">
+      <div class="statistic__wrap">
+        <h2>Statistic</h2>
+        <ul class="statistic__list"></ul>
+        <button class="btn statistic__btn">Close</button>
+      </div>
+    </div>
+  </main>
+  <script src="src/index.js"></script>
+</body>
+</html>
